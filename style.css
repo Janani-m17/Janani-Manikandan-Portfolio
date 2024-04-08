@@ -1,0 +1,555 @@
+/* Hamburger Menu */
+/* Responsive Navigation Menu */
+/* Responsive Navigation Menu */
+@media screen and (max-width: 768px) {
+  .topnav {
+      display: none; /* Hide the top navigation */
+  }
+
+  .topnav.responsive {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      background-color: #ffffff; /* Change background color */
+      position: absolute;
+      top: 60px; /* Adjust the top position */
+      left: 0;
+  }
+
+  .topnav.responsive a {
+      text-align: center;
+      padding: 10px 0; /* Adjust padding */
+      width: 100%; /* Ensure full width */
+      border-bottom: 1px solid #000000; /* Add separator */
+  }
+
+  .hamburger-menu {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      cursor: pointer;
+      z-index: 10000; /* Ensure it's above other content */
+  }
+}
+
+
+.hamburger-menu {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 10000; /* Ensure it's above other content */
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #000000;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+/* Rotate animation (hamburger-to-close) */
+.change .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar:nth-child(2) {
+  opacity: 0;
+}
+.change .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+
+
+/* Navigation Bar */
+.topnav {
+  background-color: #ffffff;
+  overflow: hidden;
+  margin-left: 700px;
+  position: fixed;
+  top: 0px;
+  z-index: 9999;
+}
+
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #000000;     /*403737*/
+  color: rgb(254, 254, 254);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #000000; 
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 768px) {
+  .container, .container_1 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .topnav {
+    margin-left: 0;
+    overflow: auto;
+  }
+
+  .text h1 {
+    margin-left: 0;
+  }
+}
+
+
+/* About Me */
+.container, .container_1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.container_1 {
+  padding-left: 15%;
+}
+
+.text {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.text h2 {
+  font-size: 40px;
+}
+
+.text h1 {
+  font-weight: bold;
+  font-size: 70px;
+  margin-left: 100px;
+}
+
+.text h3 {
+  font-size: 40px;
+  margin-left: 150px;
+}
+
+.text p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+img {
+  margin-top: 20px;
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+  margin-left: 100px;
+}
+
+.download-cv-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.download-cv-button:hover {
+  background-color: #ff8533;
+}
+
+
+/* Education and Technical Experience */
+.education-content {
+  padding: 20px;
+}
+
+.education {
+  margin-right: 140px;
+}
+
+.education-content .title {
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.education-content .timeline-box {
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.education-content .timeline-box:hover {
+  transform: scale(1.05); /* Scale up the card on hover */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.education-content .timeline-item {
+  position: relative;
+  padding-left: 37px;
+  padding-bottom: 30px;
+}
+
+.education-content .timeline-item::before {
+  content: "";
+  width: 1px;
+  position: absolute;
+  height: 100%;
+  left: 7px;
+  top: 0;
+  background-color: #000000;
+}
+
+.education-content .circle-dot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #000000;
+}
+
+.education-content .timeline-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.education-content .timeline-subtitle,
+.education-content .timeline-date {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+
+/* Skills */
+.skills {
+  margin-top: 10px; /* Add some space between Education and Skills */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 900px; /* Adjust this value as needed */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skills .title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #000000; /* Black color for title */
+}
+
+
+.skills .skill-info {
+  flex: 1; /* Take up remaining space */
+}
+
+
+.skills .skill-card:hover {
+  transform: scale(1.05); /* Scale up the card on hover */
+}
+
+.skills .skill-card {
+  display: flex; /* Use flexbox */
+  align-items: center; /* Align items vertically */
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 5px;
+  flex: 0 0 calc(50% - 20px); /* Two columns with a small gap */
+  margin-top: 10px;
+  box-sizing: border-box; /* Include padding and border in width calculation */
+  opacity: 1; /* Set opacity to 1 by default */
+  transition: transform 0.3s ease; /* Add transition for transform */
+}
+
+.skills .skill-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #000000; /* Black color for title */
+}
+
+.skills .skill-description {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #444; /* Dark gray color for subtitle and date */
+}
+
+.skills .skill-image {
+  width: 130px; /* Adjust width as needed */
+  height: 80px; /* Adjust height as needed */
+  object-fit: cover; /* Cover the entire area, maintaining aspect ratio */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  margin-left: 10px; /* Add some space between text and image */
+}
+
+.skills-content .title{
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .skills .skill-card {
+    flex: 0 0 calc(50% - 20px); /* Two columns with a small gap */
+  }
+}
+
+/* Technical Experience */
+.technical-experience {
+  padding: 20px;
+  margin-bottom: 200px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center; /* Center align the content */
+  margin-top: 100px;
+}
+
+.container_3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+} 
+
+.experience-box {
+  position: relative;
+  padding-left: 30px; /* Adjust the left padding to accommodate the dot */
+  margin-bottom: 20px;
+  transition: transform 0.3s, background-color 0.3s; /* Add transition for smooth animation */
+}
+
+.dot {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #000000;
+}
+
+/* Add the line */
+.experience-box::before {
+  content: '';
+  position: absolute;
+  left: 5px; /* Adjust the position of the line */
+  top: 0;
+  bottom: 0;
+  margin: auto 0; /* Center the line vertically */
+  width: 2px; /* Width of the line */
+  background-color: #000000;
+}
+
+.experience-content {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.experience-title {
+  font-size: 25px; /* Increase font size for title */
+  font-weight: bold;
+  margin-bottom: 10px; /* Increase margin for spacing */
+  color: #000000; /* Darken font color */
+}
+
+.experience-date {
+  font-size: 20px; /* Decrease font size for date */
+  color: #000000; /* Darken font color */
+  margin-bottom: 8px; /* Increase margin for spacing */
+}
+
+.experience-description {
+  font-size: 16px; /* Decrease font size for description */
+  line-height: 1.6;
+  color: #444444; /* Darken font color */
+}
+
+/* Hover effect */
+.experience-box:hover {
+  transform: scale(1.05); /* Scale up the box on hover */
+  background-color: #ffffff; /* Change background color on hover */
+}
+
+
+
+/* projects */
+
+.container_2 {
+  display: flex;
+  flex-wrap: wrap; /* Allow projects to wrap to the next line */
+  justify-content: center; /* Center align the projects */
+  gap: 40px; /* Add space between project cards */
+  margin-bottom: 200px;
+}
+
+.project-card {
+  position: relative;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 20px;
+  width: calc(30% - 40px); /* Set width to approximately 30% for three projects side by side */
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 200px;
+  cursor: pointer;
+}
+
+.description-card {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  width: 90%;
+  border-radius: 5px;
+  padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.title{
+  font-size: 2rem;
+}
+
+.project-card:hover .description-card {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.project-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.project-description {
+  font-size: 18px;
+  color: #000000;
+}
+
+
+
+/* Hackathons and Achievements */
+.hackathons {
+  padding: 50px 0; /* Add padding for better spacing */
+  background-color: #ffffff; /* Set background color */
+  margin-bottom: 200px;
+}
+
+.container_4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* Distribute items evenly */
+}
+
+.hackathon-card {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 500px; /* Adjust width to fit two cards in one row with space between */
+  margin-right: 20px; /* Add space between cards */
+}
+
+.hackathon-card:last-child {
+  margin-right: 0; /* Remove margin from the last card to prevent extra space */
+}
+
+.hackathon-card:hover {
+  transform: translateY(-5px); /* Add a slight lift effect on hover */
+}
+
+.hackathon-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.hackathon-date {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.hackathon-description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.hackathon-achievement {
+  font-size: 18px;
+  color: #000000;
+}
+
+
+
+/* Contact Section */
+.contact {
+  padding: 50px 0; /* Add padding for better spacing */
+  background-color: #726b6b; /* Set background color */
+}
+
+.container_5 {
+  max-width: 800px; /* Limit the width of the container */
+  margin: 0 auto; /* Center the container */
+  text-align: center; /* Center align the content */
+}
+
+.title {
+  font-size: 32px; /* Increase font size for the title */
+  font-weight: bold;
+  margin-bottom: 30px; /* Add margin below the title */
+  color: #000000; /* Set title color */
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-icon {
+  font-size: 36px; /* Set icon size */
+  color: #000000; /* Set icon color */
+  margin: 0 20px; /* Add spacing between icons */
+  transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.contact-icon:hover {
+  transform: scale(1.2); /* Scale up the icon on hover */
+  color: #c0e5ee; /* Change icon color on hover */
+}
+
